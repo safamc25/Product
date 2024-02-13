@@ -1,0 +1,82 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.postimg.cc/9QjrPF0w/parall.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#row{
+   
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: whitesmoke;
+        height: 450px;
+        width: 100.5%;
+      
+      
+}
+
+.discount{
+margin-top: -20px;
+margin-left: 50px;
+color: rgb(120, 15, 41);
+}
+
+#list{
+        background-color: rgb(165, 163, 161);
+       width: 96%;
+       height: 100%;
+       margin-left: 30px;
+}
+.btn{
+        background-color: blue;
+        color: white;
+}
+
+.card{
+        border-radius: 15px;
+        width: 300px;
+        background-color: whitesmoke;
+}
+
+
+@media(max-width:500px){
+#row{
+       height: 20%;
+}
+#f{
+        margin-left: -150px;
+        width: max-content;
+}
+#p{
+        
+        margin-left: -200px;
+}
+#h{
+
+margin-left: -180px;
+
+width: max-content;
+padding-top: 180px;
+
+
+
+}
+.carousel {
+width: 200%;
+}
+#search{
+        
+}
+}

@@ -1,0 +1,13 @@
+div{
+    background-color: rgb(158, 134, 236);
+    /* margin-top: 70px; */
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

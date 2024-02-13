@@ -1,0 +1,26 @@
+.container{
+    font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.c1{
+    color: green;
+}
+.c2{
+    color: red;
+}
+
+.c3{
+    color: yellow;
+}
+
+#f{
+    color: grey;
+}
+
+@media  (max-width:500px){
+    img{
+        margin-left: 70px;
+    }
+}

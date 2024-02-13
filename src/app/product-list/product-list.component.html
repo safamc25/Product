@@ -1,0 +1,84 @@
+<div class="parallax">
+    <div class="row" id="row">
+        <div class="col-6">
+
+
+
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="carousel" class="carousel-inner m-5">
+                    <div class="carousel-item active justify-content-center" data-bs-interval="300">
+                        <img src="https://i.postimg.cc/cHnjqpBq/kids.jpg" class="d-block w-75" alt="no image">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="300">
+                        <img src="https://i.postimg.cc/nVXvZbbN/cloth1.jpg" class="d-block w-75" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="300">
+                        <img src="https://i.postimg.cc/VkLghXCm/clo.jpg" class="d-block w-75 " alt="...">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="container p-5 my-3 ">
+
+                <h1 class="my-5 text-danger" id="h"> Find Your <span class="fs-1 text-success">Products</span> </h1>
+                <h3 class="discount" id="f">50% discount</h3>
+                <p class="mt-5" id="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde tempora, dolorem
+                    doloremque
+                    nam nulla aperiam beatae nostrum quidem magnam velit deleniti iste deserunt doloribus suscipit id
+                    laudantium dolorum optio voluptatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat
+                    facilis, porro reiciendis doloribus voluptatum ut, eos doloremque quaerat vero dolore ipsum nobis
+                    quis
+                    sed exercitationem quam accusamus. Accusamus, dolor quaerat.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container w-50 mt-5 ms-5 me-5" id="search">
+            <label for="" class="d-flex border rounded shadow-lg" >
+              
+                <input [(ngModel)]="productName" name="n1"  [placeholder]="placeholderData" type="text" class="form-control">
+
+
+                <i class="fa-solid fa-lx mt-2 ms-3 fa-magnifying-glass fa-beat-fade pe-3"></i>
+            </label>
+           
+        </div>
+
+        <div class="row my-5" id="list">
+
+
+            <div *ngFor="let i of productList | search:productName:'title' " class="card col-lg-3 col-md-6 m-4 ">
+                <a routerLink="single/{{i.id}}" style="text-decoration: none;">
+
+                    <img [src]="i.image " class="card-img-top mt-4 w-100">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark">{{i.title}}</h5>
+                    <p class="card-text  ">${{i.price}}</p>
+                    <button class="btn  mt-5">Shop Now</button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

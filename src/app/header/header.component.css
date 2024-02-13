@@ -1,0 +1,48 @@
+.navbar{
+
+   
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        background-color: rgb(158, 134, 236);
+       
+      
+      
+}
+nav{
+    width: 100%;
+}
+
+img{
+    width: 40%;
+    height: 60px;
+    margin-left: 40px;
+}
+
+.search_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    width: 450px;
+    height: 35px;
+    margin: 0px 20px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 0px 16px;
+}
+
+.search_container i{
+    color: grey;
+    
+}
+.search_container input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+

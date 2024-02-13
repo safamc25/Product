@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row m-5">
+        <div class="col-lg-6 ">
+            <img class="w-50" [src]="singleProduct.image" alt="">
+
+        </div>
+
+        <div class="col-lg-6">
+            <h1 id="f" class="text-danger">{{singleProduct.title}}</h1>
+            <ul class="list-group shadow-lg mt-4 ">
+                <li class="list-group-item py-4">
+                    <span id="f" class=" fs-4 p-2">Category</span>{{singleProduct.category}}
+                </li>
+                <li class="list-group-item py-4 ">
+                    <span id="f" class=" fs-4 p-2">Description</span><br>
+                    {{singleProduct.description}}
+                </li>
+
+
+
+
+                <li class="list-group-item py-4">
+
+                    <div>
+
+                        <p>Rating
+                            <span [ngClass]="singleProduct.rating.rate>=4?'c1':singleProduct.rating.rate>=3?'c3':'c2'">
+                                {{singleProduct.rating.rate}} <i class="fa-solid fa-star"></i></span>
+                        </p>
+
+                    </div>
+
+
+
+
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
